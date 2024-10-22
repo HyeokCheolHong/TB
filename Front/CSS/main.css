@@ -1,0 +1,106 @@
+body {
+  min-width: 640px;
+}
+
+.main-wrap{
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--white-color); */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#header-TB{
+  width: 100vw;
+  padding: 0 1.5rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#header-TB #img-logo{
+  cursor: pointer;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+}
+
+#header-TB #header-menu{
+  width: 60%;
+  min-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#header-TB #header-menu li{
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  #header-TB #header-menu {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+#header-TB #header-login-menu {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+
+}
+
+#header-TB #header-login-menu .login-icons{
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.side-bar{
+  width: 15%;
+  /* height: 70%; */
+  display: inline-block;
+  /* background-color: var(--second-color); */
+  margin: 1rem 1rem;
+}
+
+.side-bar-category li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.main-container{
+  width: 80%;
+  /* height: 70%; */
+  display: inline-block;
+}
+
+.main-container #calendar {
+  margin: 1rem;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.main-container .my-account-info {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.main-container .my-account-info .my-account-info-list {
+  list-style: none;
+  margin: 1rem;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 3rem 0 0 2rem;
+  padding-bottom: 2rem;
+}

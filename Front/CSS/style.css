@@ -1,0 +1,28 @@
+:root {
+  /* css 변수 생성 */
+  
+  --primary-color: #49a6e9;
+  /* 주요 색상 */
+  --second-color: #7149e9;
+  --grey-color-1: hsl(210, 33%, 70%);
+  /* hsl : 색(hue), 채도(saturation), 명도(lightness) 로 색 지정*/
+  --grey-color-2: hsl(190, 33%, 60%);
+  --grey-color-3: hsl(170, 37%, 50%);
+  --grey-color-4: hsl(150, 41%, 40%);
+  --grey-color-5: hsl(130, 45%, 30%);
+  --white-color: #fff;
+  --black-color: #222;
+  --ff-primary: sans-serif;
+  /* font 지정 */
+  --transition: all 0.3s linear;
+  /* 움직이는 대상에 대해서 (전체 시간 방법(linear : 처음부터 끝까지 동일하게) */
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 생성하는 box는 margin포함 전체 사이즈를 지정하겠다 */
+}

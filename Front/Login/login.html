@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지 | TB조 통합 금융 웹서비스</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="icon" sizes="60x60" href="../images/favicon/favicon.ico" />
+    <!-- 파비콘 적용 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <!-- https://inpa.tistory.com/entry/BootStrap5-%F0%9F%93%9A-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0 -->
+    <!-- bootsctrap icon 사용하기 위한 CDN 지정 -->
+  </head>
+  <body>
+    <div id="main-wrap">
+      <div id="header-TB">
+        <a href="#" id="logo" href="../Main/main.html" aria-label="TB 로고">
+          <img id="img-logo" src="../images/logo.png" alt="TB로고" />
+        </a>
+        <ul id="header-menu">
+          <li><a href="#">서비스 소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보 관리</a></li>
+        </ul>
+        <div id="header-login-menu">
+          <a href="#" id="mypage-btn" aria-label="마이 페이지">
+            <i class="bi bi-person login-icons" id="mypage-i"></i>
+          </a>
+          <a href="#" id="login-btn" aria-label="로그인">
+            <i class="bi bi-person-fill login-icons" id="login-i"></i>
+          </a>
+        </div>
+      </div>
+      <div id="login-stage">
+        <div id="login-wrap">
+          <div id="login-word">로그인</div>
+          <form id="login-form" action="/login" method="POST">
+            <input
+              id="login-id"
+              type="text"
+              name="username"
+              placeholder="ID를 입력해주세요"
+              required
+            />
+            <input
+              id="login-pw"
+              type="password"
+              name="password"
+              placeholder="비밀번호를 입력해주세요"
+              required
+            />
+            <button type="submit" id="login-btn">로그인</button>
+          </form>
+        </div>
+
+        <!-- <div class="separator">Another</div> -->
+
+        <div id="third-party-wrap">
+          <div id="third-party-word">간편 로그인</div>
+          <div id="third-party-btn-wrap">
+            <a href="#" class="naver">
+              <img
+                src="../images/naver_login_btn.png"
+                alt="네이버 로그인"
+                class="third-party-icon"
+              />
+              <!-- <a href="https://kr.freepik.com/icon/bookmark_4980492#fromView=keyword&page=3&position=78&uuid=b65200ad-c833-4705-b978-c27ad6179063">IYAHICON 제작 아이콘</a> -->
+            </a>
+            <a href="#" class="kakao">
+              <img
+                src="../images/kakao_login_btn.png"
+                alt="카카오 로그인"
+                class="third-party-icon"
+              />
+            </a>
+            <!-- <a href="https://kr.freepik.com/icon/kakao-talk_3992652#fromView=search&page=1&position=2&uuid=3945a152-fbbe-4128-9871-9f9e5623dd62">Fathema Khanom 제작 아이콘</a> -->
+            <a href="#" class="google">
+              <img
+                src="../images/google_login_btn.png"
+                alt="구글 로그인"
+                class="third-party-icon"
+              />
+              <!-- <a href="https://kr.freepik.com/icon/social_14857368#fromView=search&page=1&position=28&uuid=898f96ff-ff0a-4106-9ad9-3d8cadff6f51">justicon 제작 아이콘</a> -->
+            </a>
+          </div>
+        </div>
+        <div id="login-find-wrap">
+          <a href="#" id="find-user-info">ID/비밀번호 찾기</a>
+          <a href="#" id="membership">회원가입</a>
+        </div>
+      </div>
+      <div id="login-footer">
+        <p>팀원 정보</p>
+        <p>학원 정보</p>
+        <p>Copyright © 2024 TB조. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
